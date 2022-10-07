@@ -30,39 +30,47 @@
 - GET POST Delete Profile detail
   - Post Profile
   ```
-  { "user": "", "email": "", "location": "", "state": "", "gender": ""}
+  { "user": "",
+  "email": "",
+  "location": "",
+  "state": "",
+  "gender": ""}
   ```
     - localhost:8000/api/profile
   use postman to post data
   Download Link: https://www.postman.com/downloads/
   
-  -GET Profile 
+  - GET Profile 
   ```
   - localhost:8000/api/profile
    ```
     
-  -Delete Profile:
+  - Delete Profile:
   ```
   -localhost:8000/api/profile
    ```
    use postman to delete data
 
  - GET PUT Delete Specific Profile detail
-     -PUT Profile
+     - PUT Profile
      ```
-     { "user": "", "email": "", "location": "", "state": "", "gender": ""}
+     { "user": "",
+     "email": "",
+     "location": "", 
+     "state": "", 
+     "gender": ""}
      ```
      ```
      - localhost:8000/api/profile/1
      ```
      use postman set to PUT and change data
 
-     -GET Profile
+     - GET Profile
      ```
      localhost:8000/api/profile/1
      ```
      
-     -Delete Profile
+     - Delete Profile
      ```
      localhost:8000/api/profile/1
      ```
