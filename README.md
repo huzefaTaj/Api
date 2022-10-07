@@ -3,7 +3,7 @@
   - `pip install -r requirements.txt`
   - `python manage.py runserver`
   
-## URLs to target:
+## Api Register User URLs:
   - Register user
     - localhost:8000/api/register/
     
@@ -12,4 +12,12 @@
     
   - Logout user
     - localhost:8000/api/logout/
+    
+## Api Profile URLs:
+  - GET POST Delete Profile detail
+    - localhost:8000/api/profile
+
+  - GET PUT Delete Specific Profile detail
+     - localhost:8000/api/profile/1
+   
     
