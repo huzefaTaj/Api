@@ -5,7 +5,6 @@
   
 ## Api Register User URLs:
   - Register user
-  -   Json Format:
 ```
 {
     "username": "",
@@ -13,11 +12,15 @@
     "password": ""
     }
 ```
-   
-
     - localhost:8000/api/register/
     
   - Login  user
+```
+{
+    "username": "",
+    "password": ""
+    }
+```
     - localhost:8000/api/login/
     
   - Logout user
