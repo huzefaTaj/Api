@@ -38,13 +38,13 @@
   
   -GET Profile 
   ```
-  ```
-    - localhost:8000/api/profile
+  - localhost:8000/api/profile
+   ```
     
   -Delete Profile:
   ```
-  ```
-    -localhost:8000/api/profile
+  -localhost:8000/api/profile
+   ```
    use postman to delete data
 
   - GET PUT Delete Specific Profile detail
