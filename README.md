@@ -24,7 +24,10 @@
     localhost:8000/api/login/
     
   - Logout user
-    - localhost:8000/api/logout/
+  ```
+  localhost:8000/api/logout/
+  ```
+    
     
 ## Api Profile URLs:
 - GET POST Delete Profile detail
@@ -36,7 +39,10 @@
   "state": "",
   "gender": ""}
   ```
-    - localhost:8000/api/profile
+  ```
+  localhost:8000/api/profile
+  ```
+  
   use postman to post data
   Download Link: https://www.postman.com/downloads/
   
@@ -45,11 +51,14 @@
   - localhost:8000/api/profile
    ```
     
+    
   - Delete Profile:
   ```
-  -localhost:8000/api/profile
+   localhost:8000/api/profile
    ```
    use postman to delete data
+   
+   
 
  - GET PUT Delete Specific Profile detail
      - PUT Profile
@@ -64,6 +73,7 @@
      - localhost:8000/api/profile/1
      ```
      use postman set to PUT and change data
+
 
      - GET Profile
      ```
