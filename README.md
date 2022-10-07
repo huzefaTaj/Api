@@ -27,7 +27,7 @@
     - localhost:8000/api/logout/
     
 ## Api Profile URLs:
-  - GET POST Delete Profile detail
+ - GET POST Delete Profile detail
   - Post Profile
   ```
   { "user": "", "email": "", "location": "", "state": "", "gender": ""}
