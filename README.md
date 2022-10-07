@@ -47,7 +47,25 @@
    ```
    use postman to delete data
 
-  - GET PUT Delete Specific Profile detail
+ - GET PUT Delete Specific Profile detail
+     -PUT Profile
+     ```
+     { "user": "", "email": "", "location": "", "state": "", "gender": ""}
+     ```
+     ```
      - localhost:8000/api/profile/1
+     ```
+     use postman set to PUT and change data
+
+     -GET Profile
+     ```
+     localhost:8000/api/profile/1
+     ```
+     
+     -Delete Profile
+     ```
+     localhost:8000/api/profile/1
+     ```
+     use postman to delete specific profile
    
     
