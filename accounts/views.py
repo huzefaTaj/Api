@@ -1,12 +1,12 @@
 import profile
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.contrib.auth import login
 
 from rest_framework import permissions
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from knox.views import LoginView as KnoxLoginView
 
-# Create your views here.
 from rest_framework import generics, permissions
 from rest_framework.response import Response
 from knox.models import AuthToken
@@ -17,6 +17,8 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status
 from accounts.models import Profile
 from rest_framework.decorators import api_view
+
+from django.contrib.auth import authenticate
 
 # Register
 class RegisterAPI(generics.GenericAPIView):
@@ -70,7 +72,7 @@ def profile_list(request):
     # Delete Profile
     elif request.method == 'DELETE':
         count = Profile.objects.all().delete()
-        return JsonResponse({'message': '{} Tutorials were deleted successfully!'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
+        return JsonResponse({'message': '{} Profile deleted!'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
@@ -78,7 +80,7 @@ def profile_detail(request, pk):
     try: 
         profile = Profile.objects.get(pk=pk) 
     except Profile.DoesNotExist: 
-        return JsonResponse({'message': 'The tutorial does not exist'}, status=status.HTTP_404_NOT_FOUND) 
+        return JsonResponse({'message': 'Profile not exist'}, status=status.HTTP_404_NOT_FOUND) 
  
     if request.method == 'GET': 
         profile_serializer = ProfileSerializer(profile) 
@@ -94,5 +96,7 @@ def profile_detail(request, pk):
  
     elif request.method == 'DELETE': 
         profile.delete() 
-        return JsonResponse({'message': 'Tutorial was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
+        return JsonResponse({'message': 'Profile deleted!'}, status=status.HTTP_204_NO_CONTENT)
     
+def index(request):
+    return redirect('/api/register')

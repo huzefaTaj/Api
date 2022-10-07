@@ -6,6 +6,9 @@ from .views import LoginAPI
 from accounts import views
 from django.urls import include, re_path
 urlpatterns = [
+    path('', views.index),
+
+
     # get post delete
     re_path(r'^api/profile$', views.profile_list),
 
