@@ -5,6 +5,14 @@
   
 ## Api Register User URLs:
   - Register user
+  -   Json Format:
+  -   ```
+     {
+    "username": "huzefa",
+    "password": "123"
+    }
+    ```
+
     - localhost:8000/api/register/
     
   - Login  user
