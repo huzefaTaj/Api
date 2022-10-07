@@ -2,6 +2,8 @@
 ## Setup Api:
   - `pip install -r requirements.txt`
   - `python manage.py runserver`
+  - used Postman to GET,POST,PUT,DELETE Data
+  -   Download Link: https://www.postman.com/downloads/
   
 ## Api Register User URLs:
   - Register user
@@ -42,9 +44,8 @@
   ```
   localhost:8000/api/profile
   ```
-  
   use postman to post data
-  Download Link: https://www.postman.com/downloads/
+  
   
   - GET Profile 
   ```
