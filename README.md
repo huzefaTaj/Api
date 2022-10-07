@@ -8,7 +8,7 @@
     - localhost:8000/api/register/
     
   - Login  user
-    - http://127.0.0.1:8000/api/login/
+    - localhost:8000/api/login/
     
   - Logout user
     - localhost:8000/api/logout/
