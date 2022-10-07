@@ -8,8 +8,9 @@
   -   Json Format:
 ```
 {
-    "username": "huzefa",
-    "password": "123"
+    "username": "",
+    "email": "",
+    "password": ""
     }
 ```
    
